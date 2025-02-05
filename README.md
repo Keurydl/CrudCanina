@@ -1,182 +1,136 @@
-### Sistema de Gestión para Peluquería Canina "CANINA ESTÉTICA"🐩
-### Descripción del Proyecto:
-El sistema es una aplicación diseñada para la peluquería canina "CANINA ESTÉTICA". Su objetivo principal es almacenar y gestionar los datos de las mascotas clientes y sus dueños a través de un formulario intuitivo y fácil de usar. La aplicación permite registrar información detallada, como:
+### Management System for Canine Grooming "CANINA ESTÉTICA" 🐩
+### Project Description:
+The system is an application designed for the canine grooming salon "CANINA ESTÉTICA". Its main goal is to store and manage data of client pets and their owners through an intuitive and user-friendly form. The application allows registering detailed information, such as:
 ![image](https://github.com/user-attachments/assets/5777a219-3df5-4aa3-aeea-a7932f8fd089)
 
-## Datos de la mascota:
+## Pet Data:
 
-Número de cliente
+- Client Number
+- Dog Name
+- Breed
+- Color
+- Allergies
+- Special Care
+- Observations
 
-Nombre del perro
+## Owner Data:
 
-Raza
+- Owner ID
+- Owner Name
+- Phone Number
 
-Color
+The application features a graphical user interface (GUI) that facilitates interaction and data management. All information is stored in a database, allowing employees to access and manage records in the future.
 
-Alergias
-
-Atención especial
-
-Observaciones
-
-Datos del dueño:
-
-ID del dueño
-
-Nombre del dueño
-
-Número de celular
-
-La aplicación cuenta con una interfaz gráfica de usuario (GUI) que facilita la interacción y el manejo de los datos. Toda la información se almacena en una base de datos, permitiendo a los empleados acceder y gestionar los registros en el futuro.
-
-Diseño de la Interfaz de Usuario
-1. Interfaz de Carga de Datos
-Título: "Carga De Datos"
+## User Interface Design
+### 1. Data Entry Interface
+**Title:** "Data Entry"
 ![image](https://github.com/user-attachments/assets/7fe3e59d-72c3-4d2d-824d-12ffef678e87)
 
-Campos de Entrada:
+**Input Fields:**
 ![image](https://github.com/user-attachments/assets/f0d38d48-d2a8-4fc0-840e-40ba292aee4c)
 
-Nombre del perro (Ejemplo: 'David')
+- Dog Name (Example: 'David')
+- Breed (Example: 'Border Collie')
+- Color (Example: 'Black and White')
+- Allergic (Example: 'No')
+- Special Care (Example: 'Yes')
+- Owner Name (Example: 'Keury')
+- Owner Phone (Example: '8099903199')
+- Observations (Optional Field)
 
-Raza (Ejemplo: 'Border Collie')
+**Buttons:**
 
-Color (Ejemplo: 'Negro y Blanco')
+- **Clear:** Clears all input fields.
+- **Cancel:** Cancels the current operation.
+- **Save:** Saves the entered information.
+- **Confirmation Message:** "Saved Successfully" (indicates that the data has been saved successfully).
 
-Alérgico (Ejemplo: 'No')
-
-Atención Especial (Ejemplo: 'Sí')
-
-Nombre del Dueño (Ejemplo: 'Keury')
-
-Celular del Dueño (Ejemplo: '8099903199')
-
-Observaciones (Campo opcional)
-
-Botones:
-
-Limpiar: Borra todos los campos de entrada.
-
-Cancelar: Cancela la operación actual.
-
-Guardar: Guarda la información ingresada.
-
-Mensaje de Confirmación: "Se guardó Correctamente" (indica que los datos se han guardado con éxito).
-
-2. Interfaz de Visualización de Datos
-Título: "Visualización de Datos"
+### 2. Data Display Interface
+**Title:** "Data Display"
 ![image](https://github.com/user-attachments/assets/6f01f75c-c87a-4fd2-8bc5-f8cde6f29852)
 
-Tabla de Datos:
+**Data Table:**
 
-Encabezados:
+- **Headers:**
+  - Num: Record number.
+  - Name: Dog's name.
+  - Color: Dog's color.
+  - Breed: Dog's breed.
+  - Allergic: Indicates if the dog is allergic.
+  - Sp. Care: Special care, if the dog needs special attention.
+  - Owner: Owner's name.
+  - Phone: Owner's phone number.
 
-Num: Número de registro.
+- **Data Rows:** Each row represents a dog's record with the corresponding information. For example:
+  - Name: David
+  - Color: Black and White
+  - Breed: Border Collie
+  - Allergic: No
+  - Sp. Care: Yes
+  - Owner: Keury
+  - Phone: 8099903199
 
-Nombre: Nombre del perro.
+**Toolbar:**
 
-Color: Color del perro.
+- Icons for functionalities like modifying or deleting records.
 
-Raza: Raza del perro.
-
-Alérgico: Indica si el perro es alérgico.
-
-At. Esp: Atención especial, si el perro necesita cuidados especiales.
-
-Dueño: Nombre del dueño.
-
-Cel: Número de celular del dueño.
-
-Filas de Datos: Cada fila representa un registro de un perro con la información correspondiente. Por ejemplo:
-
-Nombre: David
-
-Color: Negro y Blanco
-
-Raza: Border Collie
-
-Alérgico: No
-
-At. Esp: Sí
-
-Dueño: Keury
-
-Cel: 8099903199
-
-Barra de Herramientas:
-
-Iconos para funcionalidades como modificación o eliminación de registros.
-
-3. Interfaz de Modificación de Datos
-Título: "Modificación De Datos"
+### 3. Data Modification Interface
+**Title:** "Data Modification"
 ![image](https://github.com/user-attachments/assets/4ba9b552-36f2-47b6-8148-1af7fb97d14b)
 
-Botones:
+**Buttons:**
 
-Limpiar: Borra todos los campos de entrada.
-
-Buscar: Permite buscar un registro específico para modificar.
-
-Guardar Cambios: Guarda las modificaciones realizadas en los datos.
-
-Mensaje de Confirmación: "Edición Realizada correctamente".
+- **Clear:** Clears all input fields.
+- **Search:** Allows searching for a specific record to modify.
+- **Save Changes:** Saves the modifications made to the data.
+- **Confirmation Message:** "Edit Completed Successfully".
 ![image](https://github.com/user-attachments/assets/5c150196-e8fd-4df2-bcb3-1544b4cd58ea)
 
-4. Eliminación de Registros
-Al seleccionar la opción de eliminar un registro, se muestra un mensaje de confirmación: "Mascota eliminada correctamente".
+### 4. Record Deletion
+When selecting the option to delete a record, a confirmation message is displayed: "Pet Deleted Successfully".
 ![image](https://github.com/user-attachments/assets/b3f805ab-5a5b-4767-bdad-39e43e8c674c)
 
-## Funcionalidades Principales
-Cargar Datos: Permite ingresar nuevos registros de mascotas y dueños.
+## Key Features
+- **Data Entry:** Allows entering new records of pets and owners.
+- **View Data:** Displays stored records in a table.
+- **Modify Data:** Allows editing the information of an existing record.
+- **Delete Records:** Deletes a record from the database.
+- **Exit:** Closes the application.
 
-Ver Datos: Muestra los registros almacenados en una tabla.
+## Technologies Used
 
-Modificar Datos: Permite editar la información de un registro existente.
-
-Eliminar Registros: Elimina un registro de la base de datos.
-
-Salir: Cierra la aplicación.
-
-## Tecnologías Utilizadas
-
-Lenguaje de Programación: [Java]<a href="https://www.java.com/en/">
+- **Programming Language:** [Java]<a href="https://www.java.com/en/">
     <img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"/>
   </a>
 
-
-Base de Datos: [Wamserver]<a href="https://www.wampserver.com/en/" target="_blank">
+- **Database:** [WampServer]<a href="https://www.wampserver.com/en/" target="_blank">
     <img src="https://img.shields.io/badge/WampServer-FF8800.svg?style=for-the-badge&logo=windows&logoColor=white" 
       alt="WampServer"/> 
 </a>
 
+## Installation and Usage
 
-## Instalación y Uso
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/canina-estetica.git
+   ```
 
-Clona este repositorio:
+2. Install the necessary dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-bash
-Copy
-git clone https://github.com/tu-usuario/canina-estetica.git
-Instala las dependencias necesarias:
+3. Run the application:
+   ```bash
+   python main.py
+   ```
 
-bash
-Copy
-pip install -r requirements.txt
-Ejecuta la aplicación:
+### Contributions 👌
 
-bash
-Copy
-python main.py
-### Contribuciones👌
+Contributions are welcome! If you want to improve this project, follow these steps:
 
-¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, sigue estos pasos:
-
-Haz un fork del repositorio.
-
-Crea una rama con tu nueva funcionalidad (git checkout -b nueva-funcionalidad).
-
-Realiza tus cambios y haz commit (git commit -m 'Añade nueva funcionalidad').
-
-Haz push a la rama (git push origin nueva-funcionalidad).
-
-Abre un Pull Request.
+1. Fork the repository.
+2. Create a branch for your new feature (`git checkout -b new-feature`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin new-feature`).
+5. Open a Pull Request.
