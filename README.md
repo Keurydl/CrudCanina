@@ -125,7 +125,7 @@ When selecting the option to delete a record, a confirmation message is displaye
    python main.py
    ```
 
-### Contributions 👌
+### Contributions 🤝
 
 Contributions are welcome! If you want to improve this project, follow these steps:
 
